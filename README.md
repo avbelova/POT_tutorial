@@ -34,4 +34,4 @@
 
 `$ jupyter lab`
 
-#### Other option is to run it on the DevCloud. In this case you don't need to install anything and source environment variables. You should just clone the repo, proceed to the directory and run Jupyter notebook/lab.
+#### Other option is to run it on the [Intel® DevCloud for the Edge](https://devcloud.intel.com/edge/). In this case you don't need to install anything and source environment variables. You should just clone the repo, proceed to the directory and run Jupyter notebook/lab.
