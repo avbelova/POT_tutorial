@@ -1,11 +1,23 @@
 # OpenVINO Post-Training Optimization Toolkit (POT) Tutorial
 
-## This tutorial helps to learn:
+[Post-Training Optimization Toolkit (POT)](https://docs.openvinotoolkit.org/latest/_README.html) is a part of [OpenVINO Toolkit](https://docs.openvinotoolkit.org/) which is responsible of applying different optimization techniques like quantization or sparcity. This repo helps you to easy undestand the tool in well-documented practical way.
+
+## This tutorial consists of 2 parts:
+
+#### [BASIC](https://github.com/avbelova/POT_tutorial/blob/master/POT_tutorial_BASICS.ipynb) which shows "standard" quntization workflow
 * What's POT configuration files structure
 * How to run POT in simplified mode
 * How to measure accuracy of FP32, INT8 models using POT config
 * How to create your own POT config
 * How to properly benchmark the workload
+
+#### [ADVANCED](https://github.com/avbelova/POT_tutorial/blob/master/POT_training_ADVANCED.ipynb) covers complicated cases and focuses on custom funtionality, discovering secrets of Accuracy Checker - the base of POT.
+* Accuracy checker architecture
+* How to analyze the model
+* How to support custom dataset 
+* How to add custom pre- and post- processing
+* YoloV3 example
+* DCSCN example
 
 ## Prerequisites:
 1. [Intel(R) Distrubution of OpenVINO Toolkit](https://software.intel.com/content/www/us/en/develop/tools/openvino-toolkit.html) 2020.2 for Linux.
