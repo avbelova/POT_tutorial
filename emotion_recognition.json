@@ -1,0 +1,48 @@
+{
+  "model": {
+    "model_name": "emotion_recognition_FP32",
+    "model": "emotion-ferplus-8.xml",
+    "weights": "emotion-ferplus-8.bin"
+  },
+  "engine": {
+    "launchers": [
+      {
+        "framework": "dlsdk",
+        "device": "CPU",
+        "adapter": "emotion_recognition"
+      }
+    ],
+    "datasets": [
+      {
+        "name": "FER+",
+        "data_source": "converted_images",
+        "annotation_conversion": {
+          "converter": "fer_plus",
+          "annotation_file": "fer2013.csv",
+        },
+        "reader": "pillow_imread",
+        "preprocessing": [
+                      {
+            "type": "emotion_recognition_preprocessing",
+            "size": 64
+          },
+          {
+            "type": "bgr_to_gray"
+          },
+        ],
+        "metrics": [
+          {
+            "name": "accuracy@top1",
+            "type": "accuracy",
+            "top_k": 1
+          },
+          {
+            "name": "accuracy@top5",
+            "type": "accuracy",
+            "top_k": 5
+          }
+        ]
+      }
+    ]
+  }
+}
