@@ -1,0 +1,23 @@
+{
+  "model": {
+    "model_name": "SampLeNet_simplified",
+    "model": "IR/SampLeNet.xml",
+    "weights": "IR/SampLeNet.bin"
+  },
+  "engine": {
+    "type": "simplified",
+    "data_source": "cifar-10-python" 
+  },
+  "compression": {
+    "target_device": "CPU",
+    "algorithms": [
+      {
+        "name": "DefaultQuantization",
+        "params": {
+          "preset": "performance",
+          "stat_subset_size": 300,
+        }
+      }
+    ]
+  }
+}
