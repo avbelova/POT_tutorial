@@ -11,7 +11,7 @@
 * How to create your own POT config
 * How to properly benchmark the workload
 
-#### [ADVANCED](https://github.com/avbelova/POT_tutorial/blob/master/POT_training_ADVANCED.ipynb) covers complicated cases and focuses on custom funtionality, discovering secrets of Accuracy Checker - the base of POT.
+#### [ADVANCED](https://github.com/avbelova/POT_tutorial/blob/master/POT_tutorial_ADVANCED.ipynb) covers complicated cases and focuses on custom funtionality, discovering secrets of Accuracy Checker - the base of POT.
 * Accuracy checker architecture
 * How to analyze the model
 * How to support custom dataset 
