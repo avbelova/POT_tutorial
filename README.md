@@ -4,7 +4,7 @@
 
 ## This tutorial consists of 2 parts:
 
-#### [BASIC](https://github.com/avbelova/POT_tutorial/blob/master/POT_tutorial_BASICS.ipynb) which shows "standard" quntization workflow
+#### [BASIC](https://github.com/avbelova/POT_tutorial/blob/master/POT_tutorial_BASICS.ipynb) which shows "standard" quantization workflow
 * What's POT configuration files structure
 * How to run POT in simplified mode
 * How to measure accuracy of FP32, INT8 models using POT config
