@@ -1,0 +1,483 @@
+<?xml version="1.0" ?>
+<mapping>
+	<map>
+		<framework name="convOut_conv1/convolution" out_port_id="0"/>
+		<IR id="115" name="convOut_conv1/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="poolC/MaxPool3D" out_port_id="0"/>
+		<IR id="33" name="poolC/MaxPool3D" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="decodeC_conv1/convolution" out_port_id="0"/>
+		<IR id="67" name="decodeC_conv1/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="concatB/concat" out_port_id="0"/>
+		<IR id="92" name="concatB/concat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeD_bn1/cond/Merge" out_port_id="0"/>
+		<IR id="42" name="encodeD_conv1/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeD_bn1/cond/batchnorm/add_1" out_port_id="0"/>
+		<IR id="42" name="encodeD_conv1/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="MRImages" out_port_id="0"/>
+		<IR id="0" name="MRImages" out_port_id="0"/>
+	</map>
+	<map>
+		<framework name="encodeD_bn0/cond/Merge" out_port_id="0"/>
+		<IR id="37" name="encodeD_conv0/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeD_bn0/cond/batchnorm/add_1" out_port_id="0"/>
+		<IR id="37" name="encodeD_conv0/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeC_conv0/convolution" out_port_id="0"/>
+		<IR id="24" name="encodeC_conv0/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="decodeB_conv1/kernel" out_port_id="0"/>
+		<IR id="82" name="decodeB_bn1/cond/batchnorm/mul_1/Fused_Mul_53155317_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeB_relu0/Relu" out_port_id="0"/>
+		<IR id="16" name="encodeB_relu0/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeB/Relu" out_port_id="0"/>
+		<IR id="21" name="encodeB/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeB_conv0/kernel" out_port_id="0"/>
+		<IR id="12" name="encodeB_bn0/cond/batchnorm/mul_1/Fused_Mul_52715273_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convOut/Relu" out_port_id="0"/>
+		<IR id="118" name="convOut/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="transconvE/kernel" out_port_id="0"/>
+		<IR id="55" name="transconvE/kernel/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeE/Relu" out_port_id="0"/>
+		<IR id="54" name="encodeE/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeC_conv0/kernel" out_port_id="0"/>
+		<IR id="23" name="encodeC_bn0/cond/batchnorm/mul_1/Fused_Mul_52795281_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="decodeA_conv1/convolution" out_port_id="0"/>
+		<IR id="99" name="decodeA_conv1/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="PredictionMask/add" out_port_id="0"/>
+		<IR id="122" name="PredictionMask/add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="transconvE/Reshape" out_port_id="0"/>
+		<IR id="58" name="transconvE/Reshape/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeA_conv0/convolution" out_port_id="0"/>
+		<IR id="2" name="encodeA_conv0/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="transconvB/kernel" out_port_id="0"/>
+		<IR id="87" name="transconvB/kernel/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convOut_bn1/cond/Merge" out_port_id="0"/>
+		<IR id="117" name="convOut_conv1/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="convOut_bn1/cond/batchnorm/add_1" out_port_id="0"/>
+		<IR id="117" name="convOut_conv1/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="decodeB_bn0/cond/Merge" out_port_id="0"/>
+		<IR id="80" name="decodeB_conv0/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="decodeB_bn0/cond/batchnorm/add_1" out_port_id="0"/>
+		<IR id="80" name="decodeB_conv0/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="decodeA_bn1/cond/Merge" out_port_id="0"/>
+		<IR id="101" name="decodeA_conv1/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="decodeA_bn1/cond/batchnorm/add_1" out_port_id="0"/>
+		<IR id="101" name="decodeA_conv1/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeC_bn1/cond/Merge" out_port_id="0"/>
+		<IR id="31" name="encodeC_conv1/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeC_bn1/cond/batchnorm/add_1" out_port_id="0"/>
+		<IR id="31" name="encodeC_conv1/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="transconvA/add" out_port_id="0"/>
+		<IR id="107" name="transconvA/add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeD/Relu" out_port_id="0"/>
+		<IR id="43" name="encodeD/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeC_bn0/cond/Merge" out_port_id="0"/>
+		<IR id="26" name="encodeC_conv0/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeC_bn0/cond/batchnorm/add_1" out_port_id="0"/>
+		<IR id="26" name="encodeC_conv0/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="decodeA_conv1/kernel" out_port_id="0"/>
+		<IR id="98" name="decodeA_bn1/cond/batchnorm/mul_1/Fused_Mul_53235325_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="transconvB/Reshape" out_port_id="0"/>
+		<IR id="90" name="transconvB/Reshape/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="decodeA_relu0/Relu" out_port_id="0"/>
+		<IR id="97" name="decodeA_relu0/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="transconvE/conv3d_transpose" out_port_id="0"/>
+		<IR id="57" name="transconvE/conv3d_transpose" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="transconvC/Reshape" out_port_id="0"/>
+		<IR id="74" name="transconvC/Reshape/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concatC/concat" out_port_id="0"/>
+		<IR id="76" name="concatC/concat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeC/Relu" out_port_id="0"/>
+		<IR id="32" name="encodeC/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convOut_conv0/convolution" out_port_id="0"/>
+		<IR id="110" name="convOut_conv0/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeE_bn0/cond/Merge" out_port_id="0"/>
+		<IR id="48" name="encodeE_conv0/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeE_bn0/cond/batchnorm/add_1" out_port_id="0"/>
+		<IR id="48" name="encodeE_conv0/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeA_bn0/cond/Merge" out_port_id="0"/>
+		<IR id="4" name="encodeA_conv0/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeA_bn0/cond/batchnorm/add_1" out_port_id="0"/>
+		<IR id="4" name="encodeA_conv0/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="transconvB/conv3d_transpose" out_port_id="0"/>
+		<IR id="89" name="transconvB/conv3d_transpose" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="transconvC/add" out_port_id="0"/>
+		<IR id="75" name="transconvC/add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="transconvA/Reshape" out_port_id="0"/>
+		<IR id="106" name="transconvA/Reshape/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concatD/concat" out_port_id="0"/>
+		<IR id="60" name="concatD/concat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="PredictionMask/convolution" out_port_id="0"/>
+		<IR id="120" name="PredictionMask/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="poolA/MaxPool3D" out_port_id="0"/>
+		<IR id="11" name="poolA/MaxPool3D" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="PredictionMask/kernel" out_port_id="0"/>
+		<IR id="119" name="PredictionMask/kernel/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="transconvB/add" out_port_id="0"/>
+		<IR id="91" name="transconvB/add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="decodeA/Relu" out_port_id="0"/>
+		<IR id="102" name="decodeA/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="decodeB_bn1/cond/Merge" out_port_id="0"/>
+		<IR id="85" name="decodeB_conv1/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="decodeB_bn1/cond/batchnorm/add_1" out_port_id="0"/>
+		<IR id="85" name="decodeB_conv1/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="decodeA_conv0/kernel" out_port_id="0"/>
+		<IR id="93" name="decodeA_bn0/cond/batchnorm/mul_1/Fused_Mul_53195321_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeA_relu0/Relu" out_port_id="0"/>
+		<IR id="5" name="encodeA_relu0/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="convOut_bn0/cond/Merge" out_port_id="0"/>
+		<IR id="112" name="convOut_conv0/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="convOut_bn0/cond/batchnorm/add_1" out_port_id="0"/>
+		<IR id="112" name="convOut_conv0/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeB_bn1/cond/Merge" out_port_id="0"/>
+		<IR id="20" name="encodeB_conv1/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeB_bn1/cond/batchnorm/add_1" out_port_id="0"/>
+		<IR id="20" name="encodeB_conv1/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeD_conv0/convolution" out_port_id="0"/>
+		<IR id="35" name="encodeD_conv0/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="poolB/MaxPool3D" out_port_id="0"/>
+		<IR id="22" name="poolB/MaxPool3D" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="concatA/concat" out_port_id="0"/>
+		<IR id="108" name="concatA/concat" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="decodeC_conv0/convolution" out_port_id="0"/>
+		<IR id="62" name="decodeC_conv0/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="decodeA_bn0/cond/Merge" out_port_id="0"/>
+		<IR id="96" name="decodeA_conv0/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="decodeA_bn0/cond/batchnorm/add_1" out_port_id="0"/>
+		<IR id="96" name="decodeA_conv0/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeB_conv1/convolution" out_port_id="0"/>
+		<IR id="18" name="encodeB_conv1/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="decodeC_relu0/Relu" out_port_id="0"/>
+		<IR id="65" name="decodeC_relu0/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="PredictionMask/Sigmoid" out_port_id="0"/>
+		<IR id="123" name="PredictionMask/Sigmoid" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeA_bn1/cond/Merge" out_port_id="0"/>
+		<IR id="9" name="encodeA_conv1/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeA_bn1/cond/batchnorm/add_1" out_port_id="0"/>
+		<IR id="9" name="encodeA_conv1/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="decodeA_conv0/convolution" out_port_id="0"/>
+		<IR id="94" name="decodeA_conv0/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeE_conv1/convolution" out_port_id="0"/>
+		<IR id="51" name="encodeE_conv1/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="decodeB_relu0/Relu" out_port_id="0"/>
+		<IR id="81" name="decodeB_relu0/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeD_relu0/Relu" out_port_id="0"/>
+		<IR id="38" name="encodeD_relu0/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="PredictionMask/Reshape" out_port_id="0"/>
+		<IR id="121" name="PredictionMask/Reshape/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeE_conv0/kernel" out_port_id="0"/>
+		<IR id="45" name="encodeE_bn0/cond/batchnorm/mul_1/Fused_Mul_52955297_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeC_conv1/convolution" out_port_id="0"/>
+		<IR id="29" name="encodeC_conv1/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="decodeC_bn0/cond/Merge" out_port_id="0"/>
+		<IR id="64" name="decodeC_conv0/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="decodeC_bn0/cond/batchnorm/add_1" out_port_id="0"/>
+		<IR id="64" name="decodeC_conv0/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="transconvC/conv3d_transpose" out_port_id="0"/>
+		<IR id="73" name="transconvC/conv3d_transpose" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="decodeC_conv1/kernel" out_port_id="0"/>
+		<IR id="66" name="decodeC_bn1/cond/batchnorm/mul_1/Fused_Mul_53075309_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeE_bn1/cond/Merge" out_port_id="0"/>
+		<IR id="53" name="encodeE_conv1/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeE_bn1/cond/batchnorm/add_1" out_port_id="0"/>
+		<IR id="53" name="encodeE_conv1/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeC_relu0/Relu" out_port_id="0"/>
+		<IR id="27" name="encodeC_relu0/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="poolD/MaxPool3D" out_port_id="0"/>
+		<IR id="44" name="poolD/MaxPool3D" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeA/Relu" out_port_id="0"/>
+		<IR id="10" name="encodeA/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeB_bn0/cond/Merge" out_port_id="0"/>
+		<IR id="15" name="encodeB_conv0/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeB_bn0/cond/batchnorm/add_1" out_port_id="0"/>
+		<IR id="15" name="encodeB_conv0/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="decodeB_conv0/kernel" out_port_id="0"/>
+		<IR id="77" name="decodeB_bn0/cond/batchnorm/mul_1/Fused_Mul_53115313_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="transconvA/conv3d_transpose" out_port_id="0"/>
+		<IR id="105" name="transconvA/conv3d_transpose" out_port_id="3"/>
+	</map>
+	<map>
+		<framework name="encodeE_conv1/kernel" out_port_id="0"/>
+		<IR id="50" name="encodeE_bn1/cond/batchnorm/mul_1/Fused_Mul_52995301_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="decodeC_conv0/kernel" out_port_id="0"/>
+		<IR id="61" name="decodeC_bn0/cond/batchnorm/mul_1/Fused_Mul_53035305_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeA_conv0/kernel" out_port_id="0"/>
+		<IR id="1" name="encodeA_bn0/cond/batchnorm/mul_1/Fused_Mul_52635265_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="transconvE/add" out_port_id="0"/>
+		<IR id="59" name="transconvE/add" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="convOut_conv1/kernel" out_port_id="0"/>
+		<IR id="114" name="convOut_bn1/cond/batchnorm/mul_1/Fused_Mul_53315333_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeE_relu0/Relu" out_port_id="0"/>
+		<IR id="49" name="encodeE_relu0/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="decodeB_conv1/convolution" out_port_id="0"/>
+		<IR id="83" name="decodeB_conv1/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="transconvA/kernel" out_port_id="0"/>
+		<IR id="103" name="transconvA/kernel/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeC_conv1/kernel" out_port_id="0"/>
+		<IR id="28" name="encodeC_bn1/cond/batchnorm/mul_1/Fused_Mul_52835285_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="transconvC/kernel" out_port_id="0"/>
+		<IR id="71" name="transconvC/kernel/Output_0/Data__const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="decodeB/Relu" out_port_id="0"/>
+		<IR id="86" name="decodeB/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeB_conv1/kernel" out_port_id="0"/>
+		<IR id="17" name="encodeB_bn1/cond/batchnorm/mul_1/Fused_Mul_52755277_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="decodeB_conv0/convolution" out_port_id="0"/>
+		<IR id="78" name="decodeB_conv0/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="convOut_conv0/kernel" out_port_id="0"/>
+		<IR id="109" name="convOut_bn0/cond/batchnorm/mul_1/Fused_Mul_53275329_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeE_conv0/convolution" out_port_id="0"/>
+		<IR id="46" name="encodeE_conv0/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="decodeC_bn1/cond/Merge" out_port_id="0"/>
+		<IR id="69" name="decodeC_conv1/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="decodeC_bn1/cond/batchnorm/add_1" out_port_id="0"/>
+		<IR id="69" name="decodeC_conv1/add/Fused_Add_" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="convOut_relu0/Relu" out_port_id="0"/>
+		<IR id="113" name="convOut_relu0/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeA_conv1/convolution" out_port_id="0"/>
+		<IR id="7" name="encodeA_conv1/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeD_conv1/kernel" out_port_id="0"/>
+		<IR id="39" name="encodeD_bn1/cond/batchnorm/mul_1/Fused_Mul_52915293_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeD_conv1/convolution" out_port_id="0"/>
+		<IR id="40" name="encodeD_conv1/convolution" out_port_id="2"/>
+	</map>
+	<map>
+		<framework name="encodeA_conv1/kernel" out_port_id="0"/>
+		<IR id="6" name="encodeA_bn1/cond/batchnorm/mul_1/Fused_Mul_52675269_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="decodeC/Relu" out_port_id="0"/>
+		<IR id="70" name="decodeC/Relu" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeD_conv0/kernel" out_port_id="0"/>
+		<IR id="34" name="encodeD_bn0/cond/batchnorm/mul_1/Fused_Mul_52875289_const" out_port_id="1"/>
+	</map>
+	<map>
+		<framework name="encodeB_conv0/convolution" out_port_id="0"/>
+		<IR id="13" name="encodeB_conv0/convolution" out_port_id="2"/>
+	</map>
+</mapping>
