@@ -1,6 +1,6 @@
 # OpenVINO Post-Training Optimization Toolkit (POT) Tutorial
 
-[Post-Training Optimization Toolkit (POT)](https://docs.openvinotoolkit.org/latest/_README.html) is a part of [OpenVINO Toolkit](https://docs.openvinotoolkit.org/) which is responsible of applying different optimization techniques like quantization or sparcity. This repo helps you to easy undestand the tool in well-documented practical way.
+[Post-Training Optimization Toolkit (POT)](https://docs.openvinotoolkit.org/latest/_README.html) is a part of [OpenVINO Toolkit](https://docs.openvinotoolkit.org/) which is responsible of applying different optimization techniques like quantization or sparsity. This repo helps you to easy undestand the tool in well-documented practical way.
 
 ## This tutorial consists of 2 parts:
 
@@ -11,7 +11,7 @@
 * How to create your own POT config
 * How to properly benchmark the workload
 
-#### [ADVANCED](https://github.com/avbelova/POT_tutorial/blob/master/POT_tutorial_ADVANCED.ipynb) covers complicated cases and focuses on custom funtionality, discovering secrets of Accuracy Checker - the base of POT.
+#### [ADVANCED](https://github.com/avbelova/POT_tutorial/blob/master/POT_tutorial_ADVANCED.ipynb) covers complicated cases and focuses on custom functionality, discovering secrets of Accuracy Checker - the base of POT.
 * Accuracy checker architecture
 * How to analyze the model
 * How to support custom dataset 
@@ -20,12 +20,16 @@
 * DCSCN example
 
 ## Prerequisites:
-1. [Intel(R) Distrubution of OpenVINO Toolkit](https://software.intel.com/content/www/us/en/develop/tools/openvino-toolkit.html) 2020.2 for Linux.
+1. Installed [Intel(R) Distrubution of OpenVINO Toolkit](https://software.intel.com/content/www/us/en/develop/tools/openvino-toolkit.html) 2020.2 for Linux.
 2. Installed OpenVINO [Accuracy Checker](https://docs.openvinotoolkit.org/latest/_tools_accuracy_checker_README.html) Tool with all dependencies.
 3. Installed OpenVINO [Post-Training Optimization Toolkit](https://docs.openvinotoolkit.org/latest/_README.html) with all dependencies.
 
+Note: the tutorial was created for Ubuntu OS but can also be adapted for other [supported OSes](https://software.intel.com/content/www/us/en/develop/tools/openvino-toolkit/system-requirements.html).
+
+Note: the tutorial was checked for OpenVINO 2020.2 and might be not working with other versions.
+
 ## Getting Started:
-#### You can run the titorial at your own machine:
+#### You can run the tutorial at your own machine:
 1. Clone or download the repo:
 
 `$ git clone https://github.com/avbelova/POT_tutorial.git`
@@ -38,7 +42,7 @@
 
 `$ source /opt/intel/openvino/bin/setupvars.sh`
 
-4. Run Jypyter Notebook
+4. Run Jupyter Notebook
 
 `$ jupyter notebook`
 
