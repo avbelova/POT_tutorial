@@ -50,4 +50,6 @@ Note: the tutorial was checked for OpenVINO 2020.2 and might be not working with
 
 `$ jupyter lab`
 
-#### Other option is to run it on the [Intel® DevCloud for the Edge](https://devcloud.intel.com/edge/). In this case you don't need to install anything and source environment variables. You should just clone the repo, proceed to the directory and run Jupyter notebook/lab.
+#### The other option is to run it on the [Intel® DevCloud for the Edge](https://devcloud.intel.com/edge/). In this case you don't need to install anything and source environment variables. You should just clone the repo, proceed to the directory and run Jupyter notebook/lab.
+
+As an addition, you can also [watch](https://www.youtube.com/watch?v=7XQAZBdA_wo&list=PLTseHiQLIfGM6ltiaeh9fL8qfxiE-u4fw&index=6) how to perform model quantization with POT via [Deep Learning Workbench](https://docs.openvinotoolkit.org/latest/workbench_docs_Workbench_DG_Introduction.html).
